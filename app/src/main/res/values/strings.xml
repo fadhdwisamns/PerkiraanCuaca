@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">PerkiraanCuaca</string>
+    <string name="sunset">Sunset</string>
+    <string name="wind">wind</string>
 </resources>

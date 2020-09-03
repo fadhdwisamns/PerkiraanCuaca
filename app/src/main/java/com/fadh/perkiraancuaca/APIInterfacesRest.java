@@ -1,6 +1,6 @@
 package com.fadh.perkiraancuaca;
 
-import com.fadh.perkiraancuaca.model.Weather;
+import com.fadh.perkiraancuaca.model.TodayWeather;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface APIInterfacesRest {
   @GET("forecast")
-  Call<Weather> getForecastByCity(@Query("q") String q, @Query("appid") String appid);
+  Call<TodayWeather> getForecastByCity(@Query("q") String q, @Query("appid") String appid);
 /*
     @GET("weather")
     Call<WeatherModel> getWeatherBasedLocation(@Query("lat") Double lat, @Query("lon") Double lon, @Query("appid") String appid);
